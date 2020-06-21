@@ -1,9 +1,9 @@
 import json
 import os
 import pymem
-from path import HAZEDUMPER_PATH
+from path import HAZEDUMPER_PATH, MAIN_PATH
 
-with open(os.path.join(HAZEDUMPER_PATH, "csgo.json"), 'r') as f:
+with open(os.path.join(MAIN_PATH, "csgo.json"), 'r') as f:
     offsets_dict = json.load(f)
 
 signatures = offsets_dict['signatures']
