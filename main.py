@@ -15,7 +15,6 @@ m_iTeamNum = netvars["m_iTeamNum"]
 
 
 def main():
-    print("Diamond has launched.")
     pm = pymem.Pymem("csgo.exe")
     client = pymem.process.module_from_name(pm.process_handle, "client.dll").lpBaseOfDll
 
